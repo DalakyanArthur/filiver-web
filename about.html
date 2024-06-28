@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Filiver</title>
+<link rel="stylesheet" href="./css/style.css">
+<script src="javascript/jquery-3.7.1.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="javascript/javascript.js" charset="utf-8"></script>
+<style media="screen">
+  html {
+    background: #000000;
+    display: block;
+    height: 100%;
+  }
+
+</style>
+
+<div class="cursor_embed w-embed w-script"><style>
+    canvas#custom-cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
+  <canvas id="custom-cursor" width="1536" height="695"></canvas>
+  
+  <script>
+    var canvas = document.getElementById("custom-cursor");
+    var ctx = canvas.getContext("2d");
+    var trailLength = 10;
+    var trail = [];
+  
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+  
+    document.addEventListener("mousemove", function (e) {
+      var x = e.clientX;
+      var y = e.clientY;
+      trail.push({ x: x, y: y });
+      if (trail.length > trailLength) {
+        trail.shift();
+      }
+    });
+  
+    function drawCursor() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (trail.length > 1) {
+        for (var i = 0; i < trail.length - 1; i++) {
+          var startPoint = trail[i];
+          var endPoint = trail[i + 1];
+          var alpha = 1 - i / trail.length;
+          ctx.beginPath();
+          ctx.moveTo(startPoint.x, startPoint.y);
+          ctx.lineTo(endPoint.x, endPoint.y);
+          ctx.strokeStyle = "rgba(255, 255, 255, " + alpha + ")";
+          ctx.lineWidth = 2;
+          ctx.stroke();
+        }
+      }
+      requestAnimationFrame(drawCursor);
+    }
+  
+    drawCursor();
+  </script></div>
+  
+</head>
+<body>
+  <header>
+      <ul class="header__menu-list">
+          <li class="header__menu-item"><a href="./index.html"
+                  class="link">
+                  Home
+              </a></li>
+          <li class="header__menu-item"><a href="./about.html"
+                  class="link">
+                  About us
+              </a></li>
+          <li class="header__menu-item"><a href="./merch.html"
+                  class="link">
+                  Merch
+              </a></li>
+          <li class="header__menu-item"><a href="./poster.html"
+                  class="link">
+                  Poster
+              </a></li>
+          <li class="header__menu-item"><a href="./contact.html"
+                  class="link">
+                  Get in touch
+              </a></li>
+      </ul>
+  </header>
+
+  <div class="texts">
+        <div class="about_group">
+            <img class="about_logo" src="./images/logo.svg" alt="">
+            <p class="about_text">Filiver is an innovative food delivery service using unique fishbot technology. <br> <br>
+            This service provides fast, environmentally friendly and safe delivery of goods along water routes.</p>
+        </div>
+  </div>
+
+  <div class="about_group2">
+        <div class="info">
+            <p class="info1">Dalakyan A. CEO</p>
+            <p class="info2">Photo: Mark Bin</p>
+        </div>
+        <img class="about_img" src="./images/aboutimg.jpg" alt="">
+    </div>
+
+    <div class="brandbook">
+        <img class="brandbook_img" src="./images/arrow.svg" alt="">
+        <a href="https://www.calameo.com/read/0076310106252fd130cb5" class="brandbook_text">Brandbook <br>Filiver</a>
+    </div>
+
+    <div class="about_txt">
+        <p class="about_text2">Fishbot is a cutting-edge invention in science and technology designed for environmentally friendly and efficient delivery of goods.
+        </p>
+    </div>
+
+    <!-- <video class="video" src="./images/fish.mp4"></video> -->
+
+    <footer class="footer">
+        <img class="line" src="./images/line.svg" alt="">
+        <div class="footer_info">
+            <div class="about_contacts">
+                <div class="email_info">
+                    <p class="type">Get in touch</p>
+                    <p class="type_info">info@filiver.com</p>
+                </div>
+    
+                <div class="phone_info">
+                    <p class="type">Phone</p>
+                    <p class="type_info">+7 (999) 999-99-99</p>
+                </div>
+            </div>
+
+            <p class="year">Filiver Delivery 2024</p>
+        </div>
+        
+    </footer>
+    
+
+
+</body>
+</html>

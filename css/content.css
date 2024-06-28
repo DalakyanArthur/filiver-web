@@ -1,0 +1,452 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'NeueHaas', sans-serif;
+  background-color: #000000;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.header{
+  background: transparent;
+  background-color: transparent;
+}
+
+.header__menu-list {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin-top: 110px;
+  margin-left: 200px;
+  background-color: transparent;
+
+  position: fixed;
+}
+
+.header__menu-item{
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 18px;
+  
+  color: #a8a8a8;
+}
+
+
+.link {
+  color: #b1b1b1;
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.link:hover{
+  color: #686868;
+}
+
+
+
+.block1{
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+}
+
+.logo{
+  width: 400px;
+  position: absolute;
+}
+
+.logo:hover{
+  width: 500px;
+  transition: 1s;
+}
+
+.t1{
+  position: absolute;
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 130px;
+
+}
+
+.texts{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.about_group{
+  margin-top: 288px;
+  margin-left: 200px;
+}
+
+.about_logo{
+  width: 616px;
+}
+
+.about_text{
+  color: #b1b1b1;
+
+  width: 768px;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 50px;
+
+  margin-top: 100px;
+}
+
+.about_group2{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  margin-top: 280px;
+  margin-left: 200px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
+.info1{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.info2{
+  color: #2F2F2F;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.about_img{
+  width: 770px;
+  margin-left: 170px;
+}
+
+.brandbook{
+  margin-left: 800px;
+  margin-top: 200px;
+}
+
+.brandbook_text{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 116px;
+}
+
+.brandbook_text:hover{
+  color: #686868;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 116px;
+}
+
+.brandbook_img{
+  position: absolute;
+
+  width: 70px;
+  margin-left: 300px;
+  margin-top: 142px;
+}
+
+
+.about_txt{
+  margin-top: 170px;
+  margin-left: 200px;
+}
+
+.about_text2{
+  color: #b1b1b1;
+
+  width: 748px;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 50px;
+
+  margin-top: 100px;
+}
+
+/* video{
+  width: 500px;
+  margin-top: 100px;
+  margin-left: 800px;
+} */
+
+.goods{
+  display: flex;
+  flex-direction: column;
+}
+
+.good{
+  display: flex;
+  flex-direction: column;
+/*   
+  height: 495px; */
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.good_title{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 500;
+  font-size: 140px;
+}
+
+.good_title{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 500;
+  font-size: 140px;
+}
+
+.good_img1{
+  height: 340px;
+  position: absolute;
+  opacity: 0%;
+
+  margin-top: 150px;
+  margin-left: 800px;
+}
+
+.good_img1:hover {
+  opacity: 100%;
+  transition: 1s;
+}
+
+.good_img2{
+  height: 340px;
+  position: absolute;
+  opacity: 0%;
+
+  margin-top: 520px;
+  margin-left: 800px;
+}
+
+.good_img2:hover {
+  opacity: 100%;
+  transition: 1s;
+}
+
+.good_img3{
+  height: 340px;
+  position: absolute;
+  opacity: 0%;
+
+  margin-top: 890px;
+  margin-left: 800px;
+}
+
+.good_img3:hover {
+  opacity: 100%;
+  transition: 1s;
+}
+
+.good_img4{
+  height: 340px;
+  position: absolute;
+  opacity: 0%;
+
+  margin-top: 1260px;
+  margin-left: 800px;
+}
+
+.good_img4:hover {
+  opacity: 100%;
+  transition: 1s;
+}
+
+.price{
+  color: #838383;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 38px;
+}
+
+.footer{
+  margin-top: 70px;
+  height: 600px;
+}
+
+.footer_merch{
+  margin-top: 100px;
+  height: 600px;
+}
+
+.footer_info{
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+
+.about_contacts {
+  display: flex;
+  flex-direction: row;
+}
+
+.email_info{
+  display: flex;
+  flex-direction: column;
+}
+
+.phone_info{
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+.type{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.type_info{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.type_info:hover{
+  color: #686868;
+}
+
+.year{
+  color: #484848;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 40px;
+
+  margin-top: 265px;
+}
+
+.posters {
+  display: flex;
+  flex-direction: row;
+  width: 1100px;
+  justify-content: space-between;
+  margin-left: 200px;
+  margin-top: 200px;
+}
+
+.poster{
+  width: 520px;
+  opacity: 30%;
+}
+
+.poster:hover {
+  opacity: 100%;
+  transition: 1s;
+}
+
+.footer_contact{
+  height: 200px;
+}
+
+.line_contact{
+  margin-top: 100px;
+}
+
+.year_contact{
+  margin-top: 100px;
+  margin-left: 200px;
+
+  color: #484848;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.form{
+  width: 590px;
+  margin-left: 760px;
+}
+
+.form_title{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 500;
+  font-size: 70px;
+}
+
+.type1{
+  color: #b1b1b1;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.type_info1{
+  color: #686868;
+
+  font-family: "NeueHaas";
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.type_info1:hover{
+  color: #686868;
+}
+
+.input{
+  width: 200px;
+  height: 40px;
+  color: #000000;
+  border: 10px;
+  border-color: #b1b1b1;
+  background: none;
+}
+
+.formi{
+  width: 540px;
+  opacity: 80%;
+}
+
+
